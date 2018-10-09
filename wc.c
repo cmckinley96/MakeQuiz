@@ -1,3 +1,8 @@
+/**
+ * @file
+ * wc.c for the makequiz
+ */
+
 /*
  * Copyright (c) 1980, 1987, 1991, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -136,6 +141,11 @@ main(int argc, char *argv[])
 	exit(errors == 0 ? 0 : 1);
 }
 
+/*!
+*		cnt function
+*		@param file, pointer to a given file
+*   @return Returns static integer
+*/
 static int
 cnt(const char *file)
 {
@@ -286,6 +296,10 @@ word:	gotsp = 1;
 	return (0);
 }
 
+/*!
+*		Displays usage to console
+*   @return Void function
+*/
 static void
 usage()
 {
